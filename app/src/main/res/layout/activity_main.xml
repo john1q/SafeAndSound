@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.john1q.safeandsound.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/mainActivityProgressVolume"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:max="100" />
+
+    <Button
+        android:id="@+id/mainActivityButtonStartThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivityProgressVolume"
+        android:layout_centerHorizontal="true"
+        android:text="Start Thread" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/mainActivityGraphData"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_below="@+id/mainActivityButtonStartThread"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_above="@+id/mainActivityTextPeak"
+        android:layout_centerHorizontal="true"
+        android:text="0 %" />
+
+    <TextView
+        android:id="@+id/mainActivityTextPeak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:text="Peaking at: NULLHz" />
+
+</LinearLayout>
