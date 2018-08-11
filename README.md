@@ -1,2 +1,2 @@
 # SafeAndSound
-safe and sound is my first android studio project
+safe and sound :P
